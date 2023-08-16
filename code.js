@@ -16,8 +16,8 @@ scaleImages = function(ratio) {
         }
 
         // Determine the new background image size - we assume
-        // the background is a 2x2 image.
-        const sizeOfBackgroundImage = 2;
+        // the background is a 256 x 256 image.
+        const sizeOfBackgroundImage = 256;
         const backgroundSize = (ratio * sizeOfBackgroundImage).toFixed();
 
         // Set the background size.
