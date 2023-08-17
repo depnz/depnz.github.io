@@ -16,13 +16,15 @@ scaleImages = function(ratio) {
         }
 
         // Determine the new background image size - we assume
-        // the background is a 256 x 256 image.
-        const sizeOfBackgroundImage = 256;
-        const backgroundSize = (ratio * sizeOfBackgroundImage).toFixed();
+        // the background is a 1400 x 900 image.
+        const sx = 1400;
+        const sy = 900;
+        const bx = (ratio * sx).toFixed();
+        const by = (ratio * sy).toFixed();
 
         // Set the background size.
-        console.log('Scaling background image to ' + backgroundSize + 'px');
-        document.body.style.backgroundSize = backgroundSize + 'px';
+        console.log('Scaling background image to ' + bx + ' x ' + by);
+        document.body.style.backgroundSize = bx + 'px ' + by + 'px';
     }
 };
 
